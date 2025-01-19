@@ -1,0 +1,173 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0b0b0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os elementos ao topo */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 96%; /* Ajuste conforme necessário */
+    height: auto; /* Ajusta a altura com base no conteúdo */
+    margin: 0px auto; /* Espaçamento superior/inferior */
+    text-align: center;
+}
+
+.container-task {
+    width: 100%; /* Ocupa toda a largura do container principal */
+    max-width: 800px; /* Limite máximo opcional */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o conteúdo interno */
+}
+
+  .container-months {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    justify-content: center; /* Centraliza os meses horizontalmente */
+    gap: 20px; /* Espaço entre os meses */
+    margin-top: 20px; /* Espaço superior */
+  }
+  
+  .month-box {
+    display: flex;
+    justify-content: flex-start; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo na vertical */
+    background: rgb(47, 47, 47);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px; /* Largura fixa para os meses */
+    height: auto; /* Altura fixa para os meses */
+    min-height: 250px;
+
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Título */
+  #title-list {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  #month-title {
+    color: #ff0000;
+  }
+  
+  /* Entrada de tarefa */
+  .task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .task-input input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .task-input button {
+    width: 25%;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-input button:hover {
+    background-color: #4cae4c;
+  }
+
+
+   /* Filtro de tarefa */
+   .container-filter {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    margin-bottom: 20px;
+  }
+  
+  .container-filter input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+ 
+  
+  /* Lista de tarefas */
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    width: 95%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  li span {
+    flex-grow:  1;
+    margin-left: 10px;
+    color: rgb(47, 47, 47);
+  }
+  
+  li button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  li button:hover {
+    background-color: #c9302c;
+  }
+
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-checkbox {
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho */
+    cursor: pointer; /* Aponta como clicável */
+    margin-right: 40px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .date-task {
+    font-style: italic;
+    color:#888
+  }

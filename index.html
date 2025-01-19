@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-task">
+        <h1 id="title-list">Lista de Tarefas</h1>
+        <div class="task-input">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Adicione uma nova tarefa"
+          />
+          <input type="date" id="task-date" />
+          <button id="add-task-button">Adicionar</button>
+        </div>
+        <div class="container-filter">
+          <input
+            type="text"
+            id="filter-input"
+            class="filter-input"
+            placeholder="Filtro"
+          />
+        </div>
+      </div>
+      <div class="container-months">
+        <div id="jan-box" class="month-box">
+          <h1 class="month-title" id="jan-title">Janeiro</h1>
+          <ul class="task-list" id="jan-task-list"></ul>
+        </div>
+        <div id="fev-box" class="month-box">
+          <h1 class="month-title" id="fev-title">Fevereiro</h1>
+          <ul class="task-list" id="fev-task-list"></ul>
+        </div>
+        <div id="mar-box" class="month-box">
+          <h1 class="month-title" id="mar-title">Março</h1>
+          <ul class="task-list" id="mar-task-list"></ul>
+        </div>
+        <div id="apr-box" class="month-box">
+          <h1 class="month-title" id="apr-title">Abril</h1>
+          <ul class="task-list" id="apr-task-list"></ul>
+        </div>
+        <div id="may-box" class="month-box">
+          <h1 class="month-title" id="may-title">Maio</h1>
+          <ul class="task-list" id="may-task-list"></ul>
+        </div>
+        <div id="jun-box" class="month-box">
+          <h1 class="month-title" id="nun-title">Junho</h1>
+          <ul class="task-list" id="jun-task-list"></ul>
+        </div>
+        <div id="jul-box" class="month-box">
+          <h1 class="month-title" id="jul-title">Julho</h1>
+          <ul class="task-list" id="jul-task-list"></ul>
+        </div>
+        <div id="aug-box" class="month-box">
+          <h1 class="month-title" id="aug-title">Agosto</h1>
+          <ul class="task-list" id="aug-task-list"></ul>
+        </div>
+        <div id="sep-box" class="month-box">
+          <h1 class="month-title" id="aug-title">Setembro</h1>
+          <ul class="task-list" id="sep-task-list"></ul>
+        </div>
+        <div id="oct-box" class="month-box">
+          <h1 class="month-title" id="oct-title">Outubro</h1>
+          <ul class="task-list" id="oct-task-list"></ul>
+        </div>
+        <div id="nov-box" class="month-box">
+          <h1 class="month-title" id="nov-title">Novembro</h1>
+          <ul class="task-list" id="nov-task-list"></ul>
+        </div>
+        <div id="dec-box" class="month-box">
+          <h1 class="month-title" id="dez-title">Dezembro</h1>
+          <ul class="task-list" id="dec-task-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
